@@ -11,9 +11,21 @@ sum = 1+2+3+....+ 99+100 = 5050
 n -> 1-
 sum = 1+2+3+...+10 = 55 */
 
-#include <stdio.h>
-int main() {
-  
-  return 0;
+#include<stdio.h>
+int main(void)
+{
+	int n, count, sum =0;
+	
+	printf("Enter positive interger :");
+	scanf("%d",&n);
+	
+	for(count=1; count<=n; count++)
+	{
+		sum =sum+count;
+	}
+	
+	printf("The sum of integer from 1 to the enterred number: %d", sum);
+	
+	return 0;
 }
 
